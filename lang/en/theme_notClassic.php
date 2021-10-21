@@ -5,8 +5,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 // A description shown in the admin theme selector.
-$string['choosereadme'] = 'Theme notClassic is a child theme of Boost.';
+$string['choosereadme'] = 'Theme notclassic is a child theme of Boost.';
 // The name of our plugin.
-$string['pluginname'] = 'notClassic';
+$string['pluginname'] = 'NotClassic';
 // We need to include a lang string for each block region.
-$string['region-side-pre'] = ' Right';
+$string['region-side-pre'] = 'Right';
