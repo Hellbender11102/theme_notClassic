@@ -5,9 +5,6 @@
 // This line protects the file from being accessed by a URL directly.
 defined('MOODLE_INTERNAL') || die();
 
-require_once(__DIR__ . '/lib.php');
-// $THEME is defined before this page is included and we can define settings by adding properties to this global object.
-
 // The first setting we need is the name of the theme. This should be the last part of the component name, and the same
 // as the directory name for our theme.
 $THEME->name = 'notclassic';
@@ -47,3 +44,10 @@ $THEME->requiredblocks = '';
 // This is a feature that tells the blocks library not to use the "Add a block" block. We don't want this in boost based themes because
 // it forces a block region into the page when editing is enabled and it takes up too much room.
 $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
+
+// This is the function that returns the SCSS source for the main file in our theme. We override the boost version because
+// we want to allow presets uploaded to our own theme file area to be selected in the preset list.
+$THEME->scss = function($theme) {
+    return theme_notclassic_get_main_scss_content($theme);
+};
+$THEME->haseditswitch = true;
