@@ -7,12 +7,13 @@ background-color: grey !important;
   background-color: #89898c;
 }
 
-#nav-drawer,#nav-drawer *,.navbar,.navbar *,.secondary-navigation,.secondary-navigation *
+#nav-drawer,#nav-drawer *,.navbar,.navbar *,.secondary-navigation,.secondary-navigation *,#theme_boost-drawers-courseindex
+,#theme_boost-drawers-courseindex *
 {
   background-color: #666666 !important;
 }
 
-#nav-drawer * {
+#nav-drawer *, #courseindex *{
   color: black;
 }
 
@@ -29,10 +30,5 @@ background-color: grey !important;
 }
 
 .list-group-item:hover{
-  border: lightgrey 1px solid;
-  font-weight: bold;
-}
-
-.nav-link:hover{
-  font-weight: bold;
+  border: lightgrey 2px solid;
 }
