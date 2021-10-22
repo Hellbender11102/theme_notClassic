@@ -27,3 +27,12 @@ background-color: grey !important;
 .border-bottom{
   border-bottom: black solid 1px;
 }
+
+.list-group-item:hover{
+  border: lightgrey 1px solid;
+  font-weight: bold;
+}
+
+.nav-link:hover{
+  font-weight: bold;
+}
