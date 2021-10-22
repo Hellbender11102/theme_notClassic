@@ -14,20 +14,7 @@
     You should have received a copy of the GNU General Public License
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
-{{!
-    @template theme_boost/navbar-secure
 
-    This template renders the top navbar.
-
-    Example context (json):
-    {
-        "output": {
-            "should_display_navbar_logo": "true",
-            "get_compact_logo_url": "http://example.com/image.png"
-        },
-        "sitename": "Moodle Site"
-    }
-}}
 <nav class="navbar fixed-top navbar-light navbar-expand" aria-label="{{#str}}sitemenubar, admin{{/str}}">
     <div class="navbar-brand d-flex align-items-center m-0 p-0 aabtn">
         {{# output.should_display_navbar_logo }}

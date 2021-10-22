@@ -1,5 +1,29 @@
-#page-content ,#page-content *,#nav-drawer,#nav-drawer *,.navbar,.navbar *
+#page-content ,#page-content > *, #page-header, #page-header *,#page,
 {
-background-color: grey;
+background-color: grey !important;
+}
 
+#region-main-box *, #region-main-box{
+  background-color: #89898c;
+}
+
+#nav-drawer,#nav-drawer *,.navbar,.navbar *,.navbar.bg-white,.secondary-navigation,.secondary-navigation *
+{
+  background-color: #666666 !important;
+}
+
+#nav-drawer * {
+  color: black;
+}
+
+
+#nav-drawer .active {
+  border: 1px solid lightgrey;
+}
+.nav-tabs, .navbar.fixed-top,.secondary-navigation, .mform fieldset{
+  border: none;
+}
+
+.border-bottom{
+  border-bottom: black solid 1px;
 }
